@@ -1,0 +1,6 @@
+# Ignore all JavaScript files in the "build" folder
+build/**/*.js
+
+# Ignore specific files
+node_modules/
+next-env.d.ts
