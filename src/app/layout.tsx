@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Sidebar from "@/components/ui/Sidebar";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} flex items-center justify-between`}>
         <Sidebar />
-        <main className="w-full h-full"> {children}</main>
+        <main className="grid  w-full h-full pl-[300px]">
+          <Header />
+          {children}
+        </main>
       </body>
     </html>
   );
